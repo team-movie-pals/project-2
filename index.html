@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet href="<link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
@@ -20,6 +19,7 @@
 <body>
     <header>
         
+
         <h2>Upcoming movies search tool</h2>
 
         <div class="wrapper">
@@ -87,6 +87,23 @@
                         </div>
 
                         <div class="boxAndGenre">
+
+                        <div class="boxAndGenre">
+                            <input type="radio" name="genreButton" value="14" id="fantasy">
+                            <label for="fantasy">Fantasy</label>
+                        </div>
+                
+                        <div class="boxAndGenre">
+                            <input type="radio" name="genreButton" value="36" id="history">
+                            <label for="history">History</label>
+                        </div>
+
+                        <div class="boxAndGenre">
+                            <input type="radio" name="genreButton" value="27" id="horror">
+                            <label for="horror">Horror</label>
+                        </div>
+
+                        <div class="boxAndGenre">
                             <input type="radio" name="genreButton" value="10402" id="music">
                             <label for="music">Music</label>
                         </div>
@@ -129,6 +146,7 @@
                     
                     <div class="button">
                         <button type="submit">Search</button>
+                        <button onclick="movie()" id="btn1">Search</button>
                     </div>
                 </form>
             </div><!-- end of "genreSelection" div -->
@@ -141,5 +159,8 @@
 
         </ul>
     </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

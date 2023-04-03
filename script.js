@@ -11,4 +11,26 @@
 
 // console.log VAR4 on the section
 
+// development
 //=======================================
+=======
+const movieApp = {};
+
+// save relevant API information
+movieApp.apiUrl = "https://api.themoviedb.org/3/movie/upcoming";
+movieApp.apiKey = "7684a5b607208105f3ec3a694e8e80b5";
+
+
+(fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=7684a5b607208105f3ec3a694e8e80b5&language=en-US&page=1')
+    .then(res => res.json())
+    .then(data => console.log(data)))
+
+function movie() {
+    var action = document.getElementById("action");
+ 
+     if(action.checked==true)
+     console.log("action movie")
+     
+
+}
+// mahmood-branch
