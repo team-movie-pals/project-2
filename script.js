@@ -11,6 +11,9 @@
 
 // console.log VAR4 on the section
 
+// development
+//=======================================
+
 const movieApp = {};
 
 // save relevant API information
@@ -28,5 +31,5 @@ function movie() {
      if(action.checked==true)
      console.log("action movie")
      
-
 }
+
