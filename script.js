@@ -11,8 +11,7 @@
 
 // console.log VAR4 on the section
 
-// development
-//=======================================
+
 
 const movieApp = {};
 
@@ -29,9 +28,9 @@ function movie() {
     var action = document.getElementById("action");
  
      if(action.checked==true)
-     console.log("action movie")
-     
+     console.log("action movie")  
 }
+
 
 //Attempt 2
 
@@ -260,4 +259,5 @@ function movie(data) {
     })
 }
 */
+
 

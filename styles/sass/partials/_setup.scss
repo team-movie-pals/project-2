@@ -1,6 +1,3 @@
-/* SNIPPETS */
-
-/* normalize block of code. will tell, between browsers, what style applies to each sections. makes it the smae for different browsers */
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -146,7 +143,8 @@ button,
 html [type=button],
 [type=reset],
 [type=submit] {
-    appearance: button
+    // -webkit-appearance: button;
+    -moz-default-appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -198,8 +196,9 @@ textarea {
 }
 
 [type=search] {
-    appearance: textfield;
-    outline-offset: -2px
+    // -webkit-appearance: textfield,
+    -moz-default-appearance: textfield;
+    outline-offset: -2px,
 }
 
 [type=search]::-webkit-search-cancel-button,
@@ -233,21 +232,17 @@ template {
     display: none
 }
 
-/* by default, when we have an element, the width we give toa  box (i.e.) is added by the border width, making the  element grow (same if we add padding). the below will add them to the inside of my element and shring the content inside of it, so we are in control of the width and height of our element*/
 html {
     box-sizing: border-box;
 }
 
-/* every   element on this page inherits the borderbox from our html = it´s only gonna grow if we say so*/
 *,
 *:before,
 *:after {
     box-sizing: inherit
 }
 
-/* collection of css properties that will thake any element and hide them visually, move them off the page. we do this if we want the content of the element to be there for assistive technology, but not to be there visually */
-.sr-only,
-.sr-only:not(:focus):not(:active) {
+.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -260,111 +255,7 @@ html {
     overflow: hidden;
 }
 
-/* END OF SNIPPETS */
-
-/* FORM styles */
-
-/* appearance: none has been set, so the checkboxes will disappear from view. Vendor prefixes are used for the appearance property to ensure it is effective on all browsers.Next, new styles need to be given to the checkboxes so they are visible again. */
-
-.wrapper {
-    max-width: 1170px;
-    width: 80%;
-    margin: 0 auto;
-    /* border: black solid; */
-}
-
-
-
-body {
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-header {
-    height: 95vh;
-    background-image: url(./header-img3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-h1, 
-h2,
-h3 {
-    text-align: center;
-    margin-left: 100px;
-}
-
-h1 {
-    margin: 2rem auto;
-    /* background-color: rgba(30, 71, 184, 0.486); */
-    color: rgb(238, 217, 30); 
-    font-size: 70px;
-    font-weight: bold;
-}
-
-h2 {
-    margin: 0;
-    padding: .8rem 0;
-    color: white;
-    background-color: rgba(48, 44, 44, 0.808);
-}
-
-h3 {
-    margin: -2rem auto 2rem;
-    background-color: rgba(255, 255, 255, 0.61);
-    font-size: 1.5rem;
-    font-style: italic;
-    padding: 20px 0;
-}
-
-form {
-    width: 100%;
-    /* height: 6rem; */
-    display: flex;
-    flex-direction: column;
-    /* margin: 2rem 0rem 2rem 20rem; */
-    align-items: center;
-    margin-left: -20rem;
-}
-
-.genreSelection {
-    background-color: rgba(241, 238, 238, 0.774);
-    padding: 2rem 0 1rem;
-    margin-top: -1rem;
-}
-
-
-.genresList {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 15rem;
-    align-items: flex-start;
-    align-self: center;
-}
-
-.boxAndGenre {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 10px;
-    font-size: 20px;
-    /* background-color: white; */
-    width: 12rem;
-}
-
-label {
-    padding-left: 10px;
-}
-
-button {
-    margin-left: 40rem;
-    margin-top: -5rem;
-    padding: 10px 40px;
-    border-color: orangered;
-    background-color: orange;
-    border-width: 8px;
-    border-radius: 10%;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+img {
+    max-width: 100%;
+    display: block;
 }
