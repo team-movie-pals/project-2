@@ -286,7 +286,7 @@ header {
     background-repeat: no-repeat;
 }
 
-h1, 
+h1,
 h2,
 h3 {
     text-align: center;
@@ -296,7 +296,7 @@ h3 {
 h1 {
     margin: 2rem auto;
     /* background-color: rgba(30, 71, 184, 0.486); */
-    color: rgb(238, 217, 30); 
+    color: rgb(238, 217, 30);
     font-size: 70px;
     font-weight: bold;
 }
@@ -318,12 +318,11 @@ h3 {
 
 form {
     width: 100%;
-    /* height: 6rem; */
     display: flex;
     flex-direction: column;
-    /* margin: 2rem 0rem 2rem 20rem; */
     align-items: center;
-    margin-left: -20rem;
+    margin-left: -22rem;
+    align-self: center;
 }
 
 .genreSelection {
