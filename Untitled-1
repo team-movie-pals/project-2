@@ -98,3 +98,15 @@
 //             }
 //         ]
 //     };
+
+function test(t) {
+    if (e === undefined) {
+        return 'Undefined value!';
+    }
+    return e;
+}
+
+let x;
+
+console.log(test(x));
+// Expected output: "Undefined value!"

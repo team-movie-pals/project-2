@@ -29,7 +29,7 @@ function movie() {
     var action = document.getElementById("action");
  
      if(action.checked==true)
-     console.log("action movie")
-     
+     console.log("action movie")  
 }
+
 
